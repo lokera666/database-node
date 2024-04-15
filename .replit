@@ -1,2 +1,12 @@
-language = "nodejs"
 run = "npm run test"
+hidden = [".config", "package-lock.json"]
+modules = ["nodejs-18:v35-20240401-269b323"]
+
+[nix]
+channel = "stable-23_05"
+
+[gitHubImport]
+requiredFiles = [".replit", "package.json", "package-lock.json"]
+
+[[ports]]
+localPort = 24678 #vitest
